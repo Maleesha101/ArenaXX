@@ -51,6 +51,11 @@ namespace ArenaX.Forms
             currentMatchPanel.Location = new Point(20, 20);
             currentMatchPanel.Padding = new Padding(10);
 
+            currentMatchPanel.Paint += (s, e) =>
+            {
+                ControlPaint.DrawBorder(e.Graphics, currentMatchPanel.ClientRectangle, Color.FromArgb(41, 46, 73), ButtonBorderStyle.Solid);
+            };
+
 
             // Match Info
             Label lblMatchNum = new Label { Text = "R1 #0", ForeColor = Color.FromArgb(127, 137, 163), Font = new Font("Consolas", 10), Location = new Point(20, 20), AutoSize = true };

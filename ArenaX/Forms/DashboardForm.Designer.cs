@@ -494,6 +494,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "DashboardForm";
             Text = "DashboardForm";
+            Load += DashboardForm_Load;
             tblTop.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();

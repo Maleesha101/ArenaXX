@@ -62,7 +62,7 @@
             btnAddTeam.FlatStyle = FlatStyle.Flat;
             btnAddTeam.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddTeam.ForeColor = SystemColors.ControlLightLight;
-            btnAddTeam.Location = new Point(1242, 58);
+            btnAddTeam.Location = new Point(1303, 28);
             btnAddTeam.Name = "btnAddTeam";
             btnAddTeam.Size = new Size(191, 47);
             btnAddTeam.TabIndex = 11;
@@ -101,10 +101,9 @@
             panel1.BackColor = Color.FromArgb(7, 11, 34);
             panel1.Controls.Add(flwTournamentCard);
             panel1.Controls.Add(btnAddTeam);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(32, 110);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1582, 733);
+            panel1.Size = new Size(1520, 733);
             panel1.TabIndex = 16;
             // 
             // TournamentsForm

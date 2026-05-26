@@ -57,9 +57,10 @@ namespace ArenaX.Forms
             panel.Margin = new Padding(20);
 
             // Custom border color
+            
             panel.Paint += (s, e) =>
             {
-                ControlPaint.DrawBorder(e.Graphics, panel.ClientRectangle, Color.FromArgb(3, 6, 23), ButtonBorderStyle.Solid);
+                ControlPaint.DrawBorder(e.Graphics, panel.ClientRectangle, Color.FromArgb(41, 46, 73), ButtonBorderStyle.Solid);
             };
 
             // Team Name Label

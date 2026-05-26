@@ -60,7 +60,7 @@ namespace ArenaX.Forms
             // Custom border color
             panel.Paint += (s, e) =>
             {
-                ControlPaint.DrawBorder(e.Graphics, panel.ClientRectangle, Color.FromArgb(51, 0, 72), ButtonBorderStyle.Solid);
+                ControlPaint.DrawBorder(e.Graphics, panel.ClientRectangle, Color.FromArgb(41, 46, 73), ButtonBorderStyle.Solid);
             };
 
             // Image Placeholder Panel 
