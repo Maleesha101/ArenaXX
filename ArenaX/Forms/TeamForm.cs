@@ -121,8 +121,8 @@ namespace ArenaX.Forms
             btnApproveTeam.BackColor = Color.FromArgb(0, 183, 100);
             btnApproveTeam.FlatAppearance.BorderSize = 0;
             btnApproveTeam.FlatStyle = FlatStyle.Flat;
-            btnApproveTeam.ForeColor = SystemColors.Desktop;
-            btnApproveTeam.Location = new Point(24, 205);
+            btnApproveTeam.ForeColor = Color.White;
+            btnApproveTeam.Location = new Point(24, 195);
             btnApproveTeam.Size = new Size(134, 41);
             btnApproveTeam.Text = "Approve";
             btnApproveTeam.Click += (s, e) =>
@@ -137,12 +137,11 @@ namespace ArenaX.Forms
             panel.Controls.Add(btnApproveTeam);
 
             // Reject Button
-
             btnRejectTeam.BackColor = Color.FromArgb(3, 6, 23);
             btnRejectTeam.FlatAppearance.BorderColor = Color.DimGray;
             btnRejectTeam.FlatStyle = FlatStyle.Flat;
             btnRejectTeam.ForeColor = Color.White;
-            btnRejectTeam.Location = new Point(172, 205);
+            btnRejectTeam.Location = new Point(172, 195);
             btnRejectTeam.Size = new Size(134, 41);
             btnRejectTeam.Text = "Reject";
             btnRejectTeam.Click += (s, e) =>

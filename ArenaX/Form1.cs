@@ -13,7 +13,11 @@ namespace ArenaX
         Form team = new TeamForm();
         Form robot = new RobotForm();
         Form tournament = new TournamentsForm();
-        Form match  = new MatchControlForm();
+        Form match = new MatchControlForm();
+        Form score = new ScoreEntryForm();
+        Form leaderborad = new LeadreboardForm();
+        Form brackets = new BracketsForm();
+
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +30,9 @@ namespace ArenaX
             dashboard.TopLevel = false;
             dashboard.BringToFront();
             dashboard.Show();
-
+            lblDivider.Height = 2;
+            lblBottomDivider.Height = 1;
+            lblBottomDivider.BackColor = Color.Gray;
         }
         public void onclick(object sender, EventArgs e)
         {
@@ -39,6 +45,9 @@ namespace ArenaX
                 robotBtn.BackColor = Color.FromArgb(2, 3, 18);
                 tournamentBtn.BackColor = Color.FromArgb(2, 3, 18);
                 matchBtn.BackColor = Color.FromArgb(2, 3, 18);
+                btnBrackets.BackColor = Color.FromArgb(2, 3, 18);
+                btnLeaderboard.BackColor = Color.FromArgb(2, 3, 18);
+                btnScoreEntry.BackColor = Color.FromArgb(2, 3, 18);
 
                 // Set active button background
                 button.BackColor = Color.FromArgb(16, 19, 44);
@@ -61,11 +70,23 @@ namespace ArenaX
                     case "matchBtn":
                         openChildForm(match);
                         break;
+                    case "btnScoreEntry":
+                        openChildForm(score);
+                        break;
+                    case "btnLeaderboard":
+                        openChildForm(leaderborad);
+                        break;
+                    case "btnBrackets":
+                        openChildForm(brackets);
+                        break;
+
                     default:
                         break;
                 }
             }
+
         }
+
 
         public void openChildForm(Form childForm)
         {
@@ -119,6 +140,20 @@ namespace ArenaX
             onclick(sender, e);
         }
 
+        private void btnScoreEntry_Click(object sender, EventArgs e)
+        {
+            onclick(sender, e);
+        }
+
+        private void btnLeaderboard_Click(object sender, EventArgs e)
+        {
+            onclick(sender, e);
+        }
+
+        private void btnBrackets_Click(object sender, EventArgs e)
+        {
+            onclick(sender, e);
+        }
         private void dashbaoardBtn_MouseHover(object sender, EventArgs e)
         {
             dashbaoardBtn.BackColor = Color.FromArgb(9, 11, 31);
@@ -182,6 +217,45 @@ namespace ArenaX
             {
                 matchBtn.BackColor = Color.FromArgb(2, 3, 18);
             }
+        }
+
+        private void btnScoreEntry_MouseHover(object sender, EventArgs e)
+        {
+            btnScoreEntry.BackColor = Color.FromArgb(9, 11, 31);
+        }
+        private void btnScoreEntry_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnScoreEntry.BackColor != Color.FromArgb(16, 19, 44))
+            {
+                btnScoreEntry.BackColor = Color.FromArgb(2, 3, 18);
+            }
+        }
+        private void btnLeaderboard_MouseHover(object sender, EventArgs e)
+        {
+            btnLeaderboard.BackColor = Color.FromArgb(9, 11, 31);
+        }
+        private void btnLeaderboard_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnLeaderboard.BackColor != Color.FromArgb(16, 19, 44))
+            {
+                btnLeaderboard.BackColor = Color.FromArgb(2, 3, 18);
+            }
+        }
+        private void btnBrackets_MouseHover(object sender, EventArgs e)
+        {
+            btnBrackets.BackColor = Color.FromArgb(9, 11, 31);
+        }
+        private void btnBrackets_MouseLeave(object sender, EventArgs e)
+        {
+            if (btnBrackets.BackColor != Color.FromArgb(16, 19, 44))
+            {
+                btnBrackets.BackColor = Color.FromArgb(2, 3, 18);
+            }
+        }
+
+        private void lblSignOut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
