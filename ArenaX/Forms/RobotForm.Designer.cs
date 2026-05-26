@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RobotForm));
-            btnAddTeam = new Button();
+            btnRegisterTeam = new Button();
             lblSub = new Label();
             lblTitle = new Label();
             flwRobotCard = new FlowLayoutPanel();
@@ -42,19 +42,20 @@
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // btnAddTeam
+            // btnRegisterTeam
             // 
-            btnAddTeam.BackColor = Color.FromArgb(134, 114, 255);
-            btnAddTeam.FlatAppearance.BorderSize = 0;
-            btnAddTeam.FlatStyle = FlatStyle.Flat;
-            btnAddTeam.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAddTeam.ForeColor = SystemColors.ControlLightLight;
-            btnAddTeam.Location = new Point(1225, 29);
-            btnAddTeam.Name = "btnAddTeam";
-            btnAddTeam.Size = new Size(191, 47);
-            btnAddTeam.TabIndex = 11;
-            btnAddTeam.Text = "Add Team";
-            btnAddTeam.UseVisualStyleBackColor = false;
+            btnRegisterTeam.BackColor = Color.FromArgb(134, 114, 255);
+            btnRegisterTeam.FlatAppearance.BorderSize = 0;
+            btnRegisterTeam.FlatStyle = FlatStyle.Flat;
+            btnRegisterTeam.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegisterTeam.ForeColor = SystemColors.ControlLightLight;
+            btnRegisterTeam.Location = new Point(1225, 29);
+            btnRegisterTeam.Name = "btnRegisterTeam";
+            btnRegisterTeam.Size = new Size(191, 47);
+            btnRegisterTeam.TabIndex = 11;
+            btnRegisterTeam.Text = "Register robot";
+            btnRegisterTeam.UseVisualStyleBackColor = false;
+            btnRegisterTeam.Click += btnRegisterTeam_Click;
             // 
             // lblSub
             // 
@@ -115,7 +116,7 @@
             // 
             panel1.BackColor = Color.FromArgb(7, 11, 34);
             panel1.Controls.Add(flwRobotCard);
-            panel1.Controls.Add(btnAddTeam);
+            panel1.Controls.Add(btnRegisterTeam);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 81);
             panel1.Name = "panel1";
@@ -145,7 +146,7 @@
 
         #endregion
 
-        private Button btnAddTeam;
+        private Button btnRegisterTeam;
         private Label lblSub;
         private Label lblTitle;
         private FlowLayoutPanel flwRobotCard;

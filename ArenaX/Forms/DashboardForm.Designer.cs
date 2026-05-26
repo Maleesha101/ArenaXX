@@ -56,9 +56,9 @@
             btnManageTeam = new Button();
             panel6 = new Panel();
             tblQuickAction = new TableLayoutPanel();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnQcViewBracket = new Button();
+            btnQcCreateTournament = new Button();
+            btnQcRegRobot = new Button();
             btnQcAddTeam = new Button();
             label11 = new Label();
             tblTop.SuspendLayout();
@@ -388,9 +388,9 @@
             tblQuickAction.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tblQuickAction.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tblQuickAction.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tblQuickAction.Controls.Add(button3, 3, 0);
-            tblQuickAction.Controls.Add(button2, 2, 0);
-            tblQuickAction.Controls.Add(button1, 1, 0);
+            tblQuickAction.Controls.Add(btnQcViewBracket, 3, 0);
+            tblQuickAction.Controls.Add(btnQcCreateTournament, 2, 0);
+            tblQuickAction.Controls.Add(btnQcRegRobot, 1, 0);
             tblQuickAction.Controls.Add(btnQcAddTeam, 0, 0);
             tblQuickAction.Location = new Point(27, 90);
             tblQuickAction.Name = "tblQuickAction";
@@ -399,62 +399,62 @@
             tblQuickAction.Size = new Size(1192, 59);
             tblQuickAction.TabIndex = 1;
             // 
-            // button3
+            // btnQcViewBracket
             // 
-            button3.BackColor = Color.FromArgb(7, 11, 34);
-            button3.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(13, 15, 46);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(897, 3);
-            button3.Name = "button3";
-            button3.Padding = new Padding(10, 0, 0, 0);
-            button3.Size = new Size(251, 53);
-            button3.TabIndex = 4;
-            button3.Text = "Add Team";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
+            btnQcViewBracket.BackColor = Color.FromArgb(7, 11, 34);
+            btnQcViewBracket.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
+            btnQcViewBracket.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 23, 56);
+            btnQcViewBracket.FlatStyle = FlatStyle.Flat;
+            btnQcViewBracket.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQcViewBracket.ForeColor = Color.White;
+            btnQcViewBracket.Location = new Point(897, 3);
+            btnQcViewBracket.Name = "btnQcViewBracket";
+            btnQcViewBracket.Padding = new Padding(10, 0, 0, 0);
+            btnQcViewBracket.Size = new Size(251, 53);
+            btnQcViewBracket.TabIndex = 4;
+            btnQcViewBracket.Text = "Vie bracket";
+            btnQcViewBracket.TextAlign = ContentAlignment.MiddleLeft;
+            btnQcViewBracket.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnQcCreateTournament
             // 
-            button2.BackColor = Color.FromArgb(7, 11, 34);
-            button2.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(13, 15, 46);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(599, 3);
-            button2.Name = "button2";
-            button2.Padding = new Padding(10, 0, 0, 0);
-            button2.Size = new Size(251, 53);
-            button2.TabIndex = 3;
-            button2.Text = "Add Team";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = false;
+            btnQcCreateTournament.BackColor = Color.FromArgb(7, 11, 34);
+            btnQcCreateTournament.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
+            btnQcCreateTournament.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 23, 56);
+            btnQcCreateTournament.FlatStyle = FlatStyle.Flat;
+            btnQcCreateTournament.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQcCreateTournament.ForeColor = Color.White;
+            btnQcCreateTournament.Location = new Point(599, 3);
+            btnQcCreateTournament.Name = "btnQcCreateTournament";
+            btnQcCreateTournament.Padding = new Padding(10, 0, 0, 0);
+            btnQcCreateTournament.Size = new Size(251, 53);
+            btnQcCreateTournament.TabIndex = 3;
+            btnQcCreateTournament.Text = "Create tournament";
+            btnQcCreateTournament.TextAlign = ContentAlignment.MiddleLeft;
+            btnQcCreateTournament.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnQcRegRobot
             // 
-            button1.BackColor = Color.FromArgb(7, 11, 34);
-            button1.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(13, 15, 46);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(301, 3);
-            button1.Name = "button1";
-            button1.Padding = new Padding(10, 0, 0, 0);
-            button1.Size = new Size(251, 53);
-            button1.TabIndex = 2;
-            button1.Text = "Add Team";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = false;
+            btnQcRegRobot.BackColor = Color.FromArgb(7, 11, 34);
+            btnQcRegRobot.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
+            btnQcRegRobot.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 23, 56);
+            btnQcRegRobot.FlatStyle = FlatStyle.Flat;
+            btnQcRegRobot.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQcRegRobot.ForeColor = Color.White;
+            btnQcRegRobot.Location = new Point(301, 3);
+            btnQcRegRobot.Name = "btnQcRegRobot";
+            btnQcRegRobot.Padding = new Padding(10, 0, 0, 0);
+            btnQcRegRobot.Size = new Size(251, 53);
+            btnQcRegRobot.TabIndex = 2;
+            btnQcRegRobot.Text = "Register robot";
+            btnQcRegRobot.TextAlign = ContentAlignment.MiddleLeft;
+            btnQcRegRobot.UseVisualStyleBackColor = false;
             // 
             // btnQcAddTeam
             // 
             btnQcAddTeam.BackColor = Color.FromArgb(7, 11, 34);
             btnQcAddTeam.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
-            btnQcAddTeam.FlatAppearance.MouseOverBackColor = Color.FromArgb(13, 15, 46);
+            btnQcAddTeam.FlatAppearance.MouseOverBackColor = Color.FromArgb(21, 23, 56);
             btnQcAddTeam.FlatStyle = FlatStyle.Flat;
             btnQcAddTeam.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQcAddTeam.ForeColor = Color.White;
@@ -483,7 +483,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(3, 6, 23);
-            ClientSize = new Size(1332, 687);
+            ClientSize = new Size(1320, 523);
             ControlBox = false;
             Controls.Add(panel6);
             Controls.Add(btnManageTeam);
@@ -548,8 +548,8 @@
         private TableLayoutPanel tblQuickAction;
         private Label label11;
         private Button btnQcAddTeam;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button btnQcViewBracket;
+        private Button btnQcCreateTournament;
+        private Button btnQcRegRobot;
     }
 }

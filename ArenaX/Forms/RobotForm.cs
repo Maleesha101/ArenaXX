@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArenaX.Forms.SubForm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,7 +41,7 @@ namespace ArenaX.Forms
         private void LoadRobots()
         {
             flwRobotCard.Controls.Clear(); // Clear the placeholder card
-            
+
             foreach (var robot in robots)
             {
                 Panel card = CreateRobotCard(robot);
@@ -59,7 +60,7 @@ namespace ArenaX.Forms
             // Custom border color
             panel.Paint += (s, e) =>
             {
-                ControlPaint.DrawBorder(e.Graphics, panel.ClientRectangle, Color.FromArgb(51,0, 72), ButtonBorderStyle.Solid);
+                ControlPaint.DrawBorder(e.Graphics, panel.ClientRectangle, Color.FromArgb(51, 0, 72), ButtonBorderStyle.Solid);
             };
 
             // Image Placeholder Panel 
@@ -68,7 +69,7 @@ namespace ArenaX.Forms
             pnlImage.Size = new Size(50, 50);
             pnlImage.Location = new Point(25, 25);
 
-       
+
             string imagePath = @"C:\Users\hp\OneDrive - University of Kelaniya\Desktop\Projects\ArenaX\ArenaX\Assets\robotIcon.png";
 
             if (System.IO.File.Exists(imagePath))
@@ -76,7 +77,7 @@ namespace ArenaX.Forms
                 Image icon = Image.FromFile(imagePath);
                 PictureBox pictureBox = new PictureBox();
                 pictureBox.BackColor = Color.FromArgb(7, 11, 34);
-                pictureBox.Image = icon; 
+                pictureBox.Image = icon;
                 pictureBox.SizeMode = PictureBoxSizeMode.Zoom; // Make sure the image scales to fit the space
                 pictureBox.Height = 50;
                 pictureBox.Width = 50;
@@ -127,7 +128,7 @@ namespace ArenaX.Forms
             btnWeight.Text = robot.Weight;
             btnWeight.Size = new Size(TextRenderer.MeasureText(robot.Weight, btnWeight.Font).Width + 20, 35);
             btnWeight.Location = new Point(btnCategory.Right + 10, 105);
-          
+
             panel.Controls.Add(btnWeight);
 
             // Description Label
@@ -140,6 +141,13 @@ namespace ArenaX.Forms
             panel.Controls.Add(lblDesc);
 
             return panel;
+        }
+
+        private void btnRegisterTeam_Click(object sender, EventArgs e)
+        {
+            Form regiterTeam = new RegisterRobot();
+
+            regiterTeam.ShowDialog();
         }
     }
 }
