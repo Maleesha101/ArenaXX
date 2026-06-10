@@ -27,6 +27,7 @@ namespace ArenaX.Forms
 
         private void LoadScorePanels()
         {
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             flxScoreEntry.Controls.Clear();
             
             foreach (var match in recentMatches)

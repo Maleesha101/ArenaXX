@@ -5,10 +5,9 @@ using System.Security.Policy;
 namespace ArenaX
 {
 
-
+   
     public partial class Form1 : Form
     {
-
         Form dashboard = new DashboardForm();
         Form team = new TeamForm();
         Form robot = new RobotForm();
@@ -26,6 +25,7 @@ namespace ArenaX
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             dashboard.Dock = DockStyle.Fill;
             dashboard.TopLevel = false;
             dashboard.BringToFront();

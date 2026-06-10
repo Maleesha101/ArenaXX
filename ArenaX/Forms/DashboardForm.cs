@@ -17,6 +17,7 @@ namespace ArenaX.Forms
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             panel1.Paint += (s, e) =>
             {
                 ControlPaint.DrawBorder(e.Graphics, panel1.ClientRectangle, Color.FromArgb(41, 46, 73), ButtonBorderStyle.Solid);

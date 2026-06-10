@@ -40,6 +40,7 @@ namespace ArenaX.Forms
 
         private void LoadRobots()
         {
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             flwRobotCard.Controls.Clear(); // Clear the placeholder card
 
             foreach (var robot in robots)

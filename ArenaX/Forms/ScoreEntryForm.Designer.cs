@@ -62,10 +62,11 @@
             // 
             // flxScoreEntry
             // 
+            flxScoreEntry.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flxScoreEntry.BackColor = Color.FromArgb(7, 11, 34);
-            flxScoreEntry.Location = new Point(45, 103);
+            flxScoreEntry.Location = new Point(12, 103);
             flxScoreEntry.Name = "flxScoreEntry";
-            flxScoreEntry.Size = new Size(1232, 614);
+            flxScoreEntry.Size = new Size(1302, 614);
             flxScoreEntry.TabIndex = 13;
             // 
             // ScoreEntryForm

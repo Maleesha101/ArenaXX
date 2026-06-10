@@ -38,6 +38,7 @@ namespace ArenaX.Forms
 
         private void LoadTeams()
         {
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             flowLayoutPanel1.Controls.Clear(); // Clear the placeholder card
 
             foreach (var team in teams)

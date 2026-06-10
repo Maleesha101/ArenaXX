@@ -33,6 +33,7 @@ namespace ArenaX.Forms
 
         private void LoadTournaments()
         {
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             flwTournamentCard.Controls.Clear();
             
             foreach (var tournament in tournaments)

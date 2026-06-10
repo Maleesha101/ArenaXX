@@ -92,12 +92,13 @@
             // 
             // flowLayoutPanel1
             // 
+            flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flowLayoutPanel1.BackColor = Color.FromArgb(7, 11, 34);
             flowLayoutPanel1.Controls.Add(pnlTeamCard);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            flowLayoutPanel1.Location = new Point(0, 81);
+            flowLayoutPanel1.Location = new Point(12, 102);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1567, 608);
+            flowLayoutPanel1.Size = new Size(1543, 587);
             flowLayoutPanel1.TabIndex = 9;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 

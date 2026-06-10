@@ -26,6 +26,7 @@ namespace ArenaX.Forms
         {
             InitializeComponent();
             InitializeCustomComponents();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 
         }
         private void InitializeCustomComponents()

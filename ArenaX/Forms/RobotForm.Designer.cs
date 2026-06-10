@@ -114,13 +114,13 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(7, 11, 34);
             panel1.Controls.Add(flwRobotCard);
             panel1.Controls.Add(btnRegisterTeam);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 81);
+            panel1.Location = new Point(12, 99);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1491, 649);
+            panel1.Size = new Size(1467, 631);
             panel1.TabIndex = 13;
             // 
             // RobotForm

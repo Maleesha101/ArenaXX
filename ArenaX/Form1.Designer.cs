@@ -519,6 +519,7 @@
             Margin = new Padding(3, 5, 3, 5);
             Name = "Form1";
             Text = "Dashboard";
+            WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             slidePanel.ResumeLayout(false);
             panel10.ResumeLayout(false);

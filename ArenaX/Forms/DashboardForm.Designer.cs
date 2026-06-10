@@ -118,12 +118,12 @@
             tblTop.Controls.Add(panel3, 2, 0);
             tblTop.Controls.Add(panel2, 1, 0);
             tblTop.Controls.Add(panel1, 0, 0);
-            tblTop.Location = new Point(44, 106);
+            tblTop.Location = new Point(12, 106);
             tblTop.Name = "tblTop";
             tblTop.Padding = new Padding(0, 0, 10, 0);
             tblTop.RowCount = 1;
             tblTop.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tblTop.Size = new Size(1270, 129);
+            tblTop.Size = new Size(1425, 129);
             tblTop.TabIndex = 2;
             // 
             // panel5
@@ -132,7 +132,7 @@
             panel5.Controls.Add(pictureBox5);
             panel5.Controls.Add(label9);
             panel5.Controls.Add(label10);
-            panel5.Location = new Point(1011, 3);
+            panel5.Location = new Point(1135, 3);
             panel5.Name = "panel5";
             panel5.Size = new Size(234, 123);
             panel5.TabIndex = 7;
@@ -175,7 +175,7 @@
             panel4.Controls.Add(pictureBox4);
             panel4.Controls.Add(label7);
             panel4.Controls.Add(label8);
-            panel4.Location = new Point(759, 3);
+            panel4.Location = new Point(852, 3);
             panel4.Name = "panel4";
             panel4.Size = new Size(234, 123);
             panel4.TabIndex = 6;
@@ -218,7 +218,7 @@
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label6);
-            panel3.Location = new Point(507, 3);
+            panel3.Location = new Point(569, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(234, 123);
             panel3.TabIndex = 5;
@@ -261,7 +261,7 @@
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label4);
-            panel2.Location = new Point(255, 3);
+            panel2.Location = new Point(286, 3);
             panel2.Name = "panel2";
             panel2.Size = new Size(234, 123);
             panel2.TabIndex = 4;
@@ -307,7 +307,7 @@
             panel1.Location = new Point(3, 3);
             panel1.Margin = new Padding(3, 3, 13, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(236, 123);
+            panel1.Size = new Size(267, 123);
             panel1.TabIndex = 3;
             // 
             // pictureBox1
@@ -349,7 +349,7 @@
             btnRunMatch.FlatStyle = FlatStyle.Flat;
             btnRunMatch.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRunMatch.ForeColor = SystemColors.ControlLightLight;
-            btnRunMatch.Location = new Point(1153, 44);
+            btnRunMatch.Location = new Point(1172, 47);
             btnRunMatch.Name = "btnRunMatch";
             btnRunMatch.Size = new Size(136, 45);
             btnRunMatch.TabIndex = 4;
@@ -364,7 +364,7 @@
             btnManageTeam.FlatStyle = FlatStyle.Flat;
             btnManageTeam.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnManageTeam.ForeColor = Color.White;
-            btnManageTeam.Location = new Point(999, 46);
+            btnManageTeam.Location = new Point(1018, 49);
             btnManageTeam.Name = "btnManageTeam";
             btnManageTeam.Size = new Size(136, 45);
             btnManageTeam.TabIndex = 5;
@@ -373,12 +373,13 @@
             // 
             // panel6
             // 
+            panel6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel6.BackColor = Color.FromArgb(7, 11, 34);
             panel6.Controls.Add(tblQuickAction);
             panel6.Controls.Add(label11);
-            panel6.Location = new Point(44, 261);
+            panel6.Location = new Point(12, 261);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1245, 228);
+            panel6.Size = new Size(1296, 228);
             panel6.TabIndex = 6;
             // 
             // tblQuickAction
